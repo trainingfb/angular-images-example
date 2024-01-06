@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, NgOptimizedImage],
   template: `
     <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet></router-outlet>
+    <img ngSrc="assets/image.png" alt="" width="150" height="200" priority="true">
   `,
   styles: [],
 })
