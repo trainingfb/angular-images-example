@@ -7,7 +7,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NgOptimizedImage],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <h1>Demo Angular Image</h1>
     <img ngSrc="assets/image.png" alt="" width="150" height="200" priority="true">
   `,
   styles: [],
