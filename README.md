@@ -1,27 +1,50 @@
-# AngularImageExamples
+```
+npx -p @angular/cli@latest ng new angular-demo -s -t -S
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+npx run build
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. creare il repository
 
-## Code scaffolding
+```
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:fabiobiondi/angular-demo.git
+ git push -u origin main     
+``` 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Install github pages for angular
 
-## Build
+```
+npm i angular-cli-ghpages -D
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4.Avviare ngh da terminale
 
-## Running unit tests
+Se andiamo su github si vedrà il branch ghpages
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ma viene deployata la carta /dist
 
-## Running end-to-end tests
+Infatti dovremmo visitare la pagina a:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+https://fabiobiondi.github.io/angular-demo/angular-demo/browser
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. Noi vogliamo deployare la root `dist/angular-demo/browser`
+
+```   
+ngh --dir=dist/angular-demo/browser
+```
+
+
+https://fabiobiondi.github.io/angular-demo/
+
+1. Create the build
+
+
+Se andiamo su github si vedrà il branch
+
+
+2. Deploy
+ng build --base-href "https://fabiobiondi.github.io/angular-demo/"
