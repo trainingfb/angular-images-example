@@ -7,6 +7,7 @@
     "build": "ng build",
     "build:ghpage": "ng build --base-href \"https://trainingfb.github.io/angular-images-example/\"",
     "deploy:ghpage": "ngh --dir=dist/angular-image-examples/browser",
+    "page": "npm run build:ghpage && npm run deploy:ghpage",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

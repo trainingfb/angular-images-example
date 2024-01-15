@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
     <div class="page">
     <h1>Demo CDN + ngSRC</h1>
     
-    <img src="assets/ie-cdn-logo.png" alt="">
+    <img ngSrc="assets/cdn-logo.png" alt="">
     <!--Static CDN path-->
     <!--<img ngSrc="https://p5yeckmk.dev.cdn.imgeng.in/assets/image.png?imgeng=w_800" alt="" width="150" height="200" priority="true">-->
 

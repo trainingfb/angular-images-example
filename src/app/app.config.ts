@@ -13,10 +13,10 @@ export const appConfig: ApplicationConfig = {
     {
       provide: IMAGE_LOADER,
       useValue: (config: ImageLoaderConfig) => {
-        console.log(config)
+       // console.log(config)
         return config.width ?
-            `${host}/${config.src}?imgeng=w_${config.width}` :
-            `${host}/${config.src}`;
+          `${host}/${config.src}?imgeng=w_${config.width}` :
+          `${host}/${config.src}`;
       },
     },
   ]
